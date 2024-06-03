@@ -2,20 +2,20 @@ import numpy as np
 
 ### parameter bounds
 # temp ratio
-left_temp  	= 1.6 - 0.2*1.6
-right_temp 	= 1.6 + 0.2*1.6
+left_temp  	= 0.2
+right_temp 	= 1.3
 
 # grad n
-left_omn  	= 0.8 - 0.2*0.8
-right_omn   = 0.8 + 0.2*0.8
+left_omn  	= -0.4
+right_omn   = 2.4
 
 # grad T_i
-left_omt_ions  	= 2.0 - 0.2*2.0
-right_omt_ions 	= 2.0 + 0.2*2.0
+left_omt_ions  	= 2.
+right_omt_ions 	= 4.
 
 # grad T_e
-left_omt_elecs  	= 3.0 - 0.2*3.0
-right_omt_elecs  	= 3.0 + 0.2*3.0
+left_omt_elecs  	= 1.
+right_omt_elecs  	= 3.
 
 left_stoch_boundary 	= [left_temp, left_omn, left_omt_ions, left_omt_elecs]
 right_stoch_boundary 	= [right_temp, right_omn, right_omt_ions, right_omt_elecs]
